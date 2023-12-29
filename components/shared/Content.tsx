@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from '../ui/button'
 import Image from 'next/image'
+import { BsArrowRight } from 'react-icons/bs'
 
 const Content = () => {
   return (
@@ -12,7 +13,7 @@ const Content = () => {
         <p className="lg:w-3/4 w-full leading-relaxed text-gray-500">Find the right industry for your career.</p>
       </div>
       <div className="sm:w-1/2 w-full sm:pl-4 text-center">
-        <Button className="inline-flex items-center bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-700 rounded-full text-white">All Categories </Button>
+        <Button className="inline-flex items-center bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-700 rounded-full text-white">All Categories <span className='ml-2'><BsArrowRight /></span> </Button>
       </div>
     </div>
 
