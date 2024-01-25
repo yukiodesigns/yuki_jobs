@@ -84,7 +84,9 @@ const FeaturedJobs = ({type}) => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 container px-5 py-20 mx-auto">
         {visibleJobs.map((job, index) => (
           <div key={index} >
+            <Link href='/jobs/id'>
             <JobCard key={index} job={job}  />
+            </Link>
           </div>
         ))}
       </div>
