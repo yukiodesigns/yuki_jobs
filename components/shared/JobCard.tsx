@@ -6,7 +6,18 @@ import { BsArrowRight } from 'react-icons/bs';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const JobCard = ({ job}) => {
+interface JobCardProps {
+  job: {
+    title: string;
+    type: string;
+    location: string;
+    datePosted: string;
+    image: string;
+  };
+}
+
+
+const JobCard: React.FC<JobCardProps> = ({ job }) => {
   return (
     <div className={`bg-white rounded-lg overflow-hidden shadow-md flex items-m-4 flex-wrap`}>
       <div className={` md:h-32 w-24 h-20 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-4 ml-4`}>

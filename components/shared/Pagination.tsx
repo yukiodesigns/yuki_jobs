@@ -1,7 +1,13 @@
 import React from 'react';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 
-const Pagination = ({ onPageChange, currentPage, totalPages }) => {
+interface PaginationProps {
+  onPageChange: (page: number) => void;
+  currentPage: number;
+  totalPages: number;
+}
+
+const Pagination: React.FC<PaginationProps> = ({ onPageChange, currentPage, totalPages }) => {
   return (
     <div className="flex items-center justify-center mt-4">
       <button
