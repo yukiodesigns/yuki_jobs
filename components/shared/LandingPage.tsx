@@ -3,7 +3,7 @@ import Banner from '@/components/shared/Banner'
 import Companies from '@/components/shared/Companies'
 import Content from '@/components/shared/Content'
 import Details from '@/components/shared/Details'
-import Featured from '@/components/shared/Featured'
+import FeaturedJobs from '@/components/shared/Featured'
 import HeroSection from '@/components/shared/Hero'
 import HowItWorks from '@/components/shared/HowItWorks'
 import Statistics from '@/components/shared/Statistics'
@@ -14,7 +14,7 @@ const LandingPage = () => {
     <>
       <HeroSection />
       <AboutUs />
-      <Featured />
+      <FeaturedJobs type='landing'/>
       <Content />
       <Statistics />
       <Details />
