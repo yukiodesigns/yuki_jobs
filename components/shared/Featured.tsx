@@ -6,7 +6,7 @@ import Pagination from './Pagination';
 import JobCard from './JobCard';
 import Link from 'next/link';
 
-const FeaturedJobs = ({type}) => {
+const FeaturedJobs: React.FC<{ type: string }> = ({ type }) => {
   const jobsData = [
     {
       id:1,
@@ -70,7 +70,7 @@ const FeaturedJobs = ({type}) => {
   const totalPages = Math.ceil(jobsData.length / itemsPerPage);
   const [currentPage, setCurrentPage] = useState(1);
 
-  const handlePageChange = (newPage) => {
+  const handlePageChange = (newPage: number) => {
     setCurrentPage(newPage);
   };
 
